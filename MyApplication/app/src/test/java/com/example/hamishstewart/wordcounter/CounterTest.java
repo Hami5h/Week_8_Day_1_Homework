@@ -1,5 +1,7 @@
 package com.example.hamishstewart.wordcounter;
 
+import com.example.hamishstewart.wordcounter.Model.Counter;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,8 +15,7 @@ public class CounterTest {
 
     @Test
     public void getWordCount() {
-        this.counter = new Counter("I want to count");
-        assertEquals(4, counter.getWordCount("I want to count"));
+        assertEquals(4, Counter.getWordCount("I want to count"));
     }
 
 
